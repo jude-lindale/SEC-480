@@ -9,28 +9,17 @@
 arwine.shire.org is a Ubuntu Linux system running OpenSSH 8.9p1 on port 22, Apache httpd 2.4.52 on port80, with another open port of 3000
 
 ## Vulnerability Explanation
-The website contained an outdated version of gitea.  1.19.0 is the current version.  1.12.5 was loaded. 
+1. The website contained an outdated version of gitea.  1.19.0 is the current version.  1.12.5 was loaded. 
+   - Fix: Upgrading all applications to their current version is essential as each version patches known and exploitable vulnerabilities.
+   - Severity: High
 
-### Vulnerability Fix
-Upgrading all applications to their current version is essential as each version patches known and exploitable vulnerabilities. 
+ 2. Administrative credentials for the arwen user of gitea were posted on a the server and accessible via a web call to arwen.shire.org/admin. Passwords should not be stored in plain text and should never be stored without encryption.
+   - Fix: Record passwords offline in a secure location (like a safe) or use an approved password management system on a separate workstation.
+   - Severity: High
 
-Severity: High
-
-## Vulnerability Explanation:  
-Administrative credentials for the arwen user of gitea were posted on a the server and accessible via a web call to arwen.shire.org/admin. Passwords should not be stored in plain text and should never be stored without encryption.
-
-### Vulnerability Fix: 
-Record passwords offline in a secure location (like a safe) or use an approved password management system on a separate workstation.
-
-Severity: High
-
-## Vulnerability Explanation:  
-The arwen user employed a weak password for the linux systems (SecurePassworD).  
-
-### Vulnerability Fix: 
-Policy should be changed to require longer, complex passwords for administrative access.  No dictionary words should be allowed. Ideally, multi-factor authentication should be required for all servers.
-
-Severity: High
+3. The arwen user employed a weak password for the linux systems (SecurePassworD).  
+   - Fix: Policy should be changed to require longer, complex passwords for administrative access.  No dictionary words should be allowed. Ideally, multi-factor authentication should be required for all servers.
+   - Severity: High
 
 
 ## Supporting Evidence
