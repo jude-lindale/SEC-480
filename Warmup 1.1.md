@@ -6,7 +6,7 @@
 |  10.0.5.27   | 22, 80, 3000|
 
 ## Target Overview
-arwine.shire.org is a Ubuntu Linux system running OpenSSH 8.9p1 on port 22, Apache httpd 2.4.52 on port80, with another open port of 3000
+arwine.shire.org is a Ubuntu Linux system running OpenSSH 8.9p1 on port 22, Apache httpd 2.4.52 on port 80, with another open port of 3000
 
 ## Vulnerability Explanation
 1. The website contained an outdated version of gitea.  1.19.0 is the current version.  1.12.5 was loaded. 
